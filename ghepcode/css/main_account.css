@@ -1,0 +1,105 @@
+.account__container {
+  display: flex;
+  /* padding: 0 15%; */
+  background-color: var(--p-50);
+  min-height: 70vh;
+}
+
+.account__content-bo {
+  flex: 1;
+}
+/* Thanh dieu huong ben trai */
+.sidebar__container {
+  padding-top: 60px;
+  width: 300px;
+  background: var(--p-500);
+  color: var(--p-50);
+  font-weight: bold;
+  /* margin-left: 20px; */
+
+  & p {
+    font-size: var(--h5-font-size);
+    padding: 30px 20px;
+  }
+
+  /* sua lai danh sach */
+  & .sidebar__menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar__menu a {
+    color: var(--p-50);
+    text-decoration: none;
+    font-size: var(--p-font-size);
+  }
+
+  .sidebar__menu li {
+    padding: 12px 20px; 
+    border-bottom: 1px solid var(--p-50);
+  }
+
+  .sidebar__menu .active {
+    background: var(--p-50);
+    
+
+    & a {
+      color: var(--p-500);
+    }
+  }
+}
+.search__container{
+    display: none !important;
+}
+.nav__container{
+    gap:50px !important;
+}
+/* Noi dung chinh ben phai */
+.account__content {
+  flex: 1;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 90px 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+  & h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: var(--h5-font-size);
+    color: var(--p-600);
+  }
+
+  & .account__content-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & label {
+      width: 130px;
+      font-weight: bold;
+    }
+
+    & input {
+      flex: 1;
+      padding: 15px;
+      border: 0px;
+      border-radius: 8px;
+      background: #f7f7f7;
+      color: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--p-100);
+    }
+
+    & button {
+      margin-left: 20px;
+      padding: 15px 40px;
+      border: 1px solid var(--p-500);
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      color: var(--p-900);
+      font-size: var(--caption-font-size);
+    }
+  }
+}

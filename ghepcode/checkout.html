@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../ghepcode/css/theme.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/header.css">
+    <link rel="stylesheet" href="../ghepcode/css/cart.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/filter.css">
+    <link rel="icon" href="asset/icon-logo.ico">
+</head>
+<body>
+<!-- header nav trang -->
+    <header>
+        <div class="container header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="MainFormSigned.html" class="logo">
+                    <img src="asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="MainFormSigned.html" >Công thức</a></li>
+                    <li><a href="courseExplore.html" class="active" >Khóa học</a></li>
+                    <li><a href="giangvien.html">Đầu bếp</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <a href="account.html" class="login-link">
+                <button class="login-btn">Đình Nghĩa</button>
+                </a>
+
+                <a href="account.html">
+                    <img src="asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                </a>
+            </div>
+     </header>
+    
+<!---------------------------------------------------->
+
+    <div class="page-container">
+        
+        <h2 class="page-title">Đơn hàng của bạn</h2>
+
+        <div class="cart-table-header">
+            <div class="col-product">KHÓA HỌC</div>
+            <div class="col-qty">SỐ LƯỢNG</div>
+            <div class="col-subtotal">TẠM TÍNH</div>
+            <div class="col-subtotal">TỔNG</div>
+        </div>
+
+        <div class="cart-row">
+            <div class="col-product product-name">Bí kíp thịt chó đại cương</div>
+            <div class="col-qty">1</div>
+            <div class="col-subtotal">38.000.000</div>
+            <div class="col-subtotal"><strong>38.000.000</strong></div>
+        </div>
+
+        <div class="coupon-section">
+            <label class="coupon-label">MÃ GIẢM GIÁ</label>
+            <div class="coupon-input-group">
+                <input type="text" class="coupon-input" placeholder="Nhập mã giảm giá...">
+                <button class="btn-olive">Áp dụng</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <label class="coupon-label">PHƯƠNG THỨC THANH TOÁN</label>
+            
+            <div class="payment-methods">
+                
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="vietqr" checked hidden> 
+                    <div class="payment-box">
+                        <div class="radio-circle"></div>
+                        <span>VietQR / Napas</span>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="bank" hidden>
+                    <div class="payment-box">
+                        <div class="radio-circle"></div>
+                        <span>CK Ngân hàng</span>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="cash" hidden>
+                    <div class="payment-box">
+                        <div class="radio-circle"></div>
+                        <span>Giao dịch trực tiếp</span>
+                    </div>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="cart-footer-action">
+            <button class="btn-olive btn-large">ĐẶT HÀNG</button>
+        </div>
+
+    </div>
+<!-- filter trên navbar -->
+    <input type="checkbox" id="toggle-filter" class="filter-toggle" hidden>
+<div class="modal-overlay">
+    <label for="toggle-filter" class="modal-backdrop"></label>
+
+    <div class="filter-box">
+        <div class="filter-header">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <label for="toggle-filter" class="filter-close">&times;</label>
+        </div>
+
+        <div class="filter-body">
+            <div class="filter-row">
+                <label class="filter-label">Tên:</label>
+                <input type="text" class="filter-input-gray" placeholder="Nhập tên...">
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Tag:</label>
+                <div class="filter-tags-group">
+                    <button class="filter-tag">Món Á</button>
+                    <button class="filter-tag">Món Âu</button>
+                    <button class="filter-tag">Tráng miệng</button>
+                    <button class="filter-tag">Nướng bánh</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Đánh giá:</label>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <input type="text" class="filter-input-gray input-small" placeholder="..."> 
+                    <span>★</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Số buổi:</label>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <input type="text" class="filter-input-gray input-small" placeholder="..."> 
+                    <span>Buổi học</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Giá:</label>
+                <div class="price-range-group">
+                    <span>Từ</span>
+                    <input type="text" class="filter-input-gray price-input" placeholder="...">
+                    <span>đến</span>
+                    <input type="text" class="filter-input-gray price-input" placeholder="...">
+                    <span>VNĐ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-footer">
+            <button class="btn-search-submit">
+                Tìm <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+    </div>
+</div>
+<!-------------------------------------->
+</body>
+</html>

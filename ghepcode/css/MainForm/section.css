@@ -1,0 +1,132 @@
+.recipes__section{
+    margin: auto 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* check lai */
+    gap: 30px;
+}
+
+.recipes__container{
+    box-shadow: 0px 4px 6px -1px rgb(0,0,0,0.1),
+    0 2px 4px -2px rgb(0,0,0,0.1);
+    /* background-color: var(--p-50); */
+    border-radius: 15px;
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease;
+}
+
+.recipes__container:hover{
+    transform: scale(1.02);
+    background-color: var(--p-50);
+    box-shadow: 0px 20px 25px -5px rgb(0,0,0,0.1),
+    0 8px 10px -6px rgb(0,0,0,0.1);
+}
+
+.recipes__img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    & img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover; 
+    /* giúp ảnh k bị méo mà vẫn lấp đầy khung */
+    border-radius: 10px;
+    margin-top: 15px;
+    /* position: relative; */
+    }
+
+    & .recipes__tag {
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+    background: var(--p-600);
+    color: #fff;
+    font-size: var(--caption-font-size);
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+}
+
+
+.recipes__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    align-items: center;
+    gap: 10px;
+
+    & .recipes__title{
+    /* display: inline; */
+    font-size: var(--h4-font-size);
+    color: var(--p-600);
+    font-weight: 500;
+    }
+
+    & .recipes__desc{
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    color: #444;
+    margin-bottom: 10px;
+    height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    margin: auto 5px;
+    }
+
+    & .recipes__labels{
+    /* justify-self: start; */
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 10px 5px;
+    /* margin: 0 0 12px; */
+    font-size: var(--p-font-size);
+    color: var(--p-500);
+    font-weight: 500;
+    }
+}
+
+.recipes__love{
+
+    & .card__favorite {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: var(--h4-font-size);
+        cursor: pointer;
+        /* user-select: none; */
+    }
+
+
+    & .favorite-input {
+        display: none;
+    }
+
+
+    /* Trái tim rỗng */
+    & .card__favorite::before {
+        content: "♡";
+        color: var(--p-500);
+    }
+
+    /* Khi checkbox được check → đổi thành tim đỏ */
+    & .favorite-input:checked + .card__favorite::before {
+        content: "❤";
+        color: red;
+    }
+}

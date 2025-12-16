@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link rel="stylesheet" href="../css/account/course__history.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/main_account.css" />
+    <link rel="stylesheet" href="../css/account/course__puchase.css" />
+    <link rel="icon" href="../asset/icon-logo.ico">
+  </head>
+  </head>
+  <body>
+    <!-----------
+    Header
+    -------------->
+    <header>
+        <div class="header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="../MainFormSigned.html" class="logo">
+                    <img src="../asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+            
+          
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="../MainFormSigned.html" >Công thức</a></li>
+                    <li><a href="../courseExplore.html" >Khóa học</a></li>
+                    <li><a href="../giangvien.html">Đầu bếp</a></li>
+                    <li><a href="../Blog.html">Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <a href="../account.html" class="login-link">
+                <button class="login-btn">Đình Nghĩa</button>
+                </a>
+
+                <a href="../account.html">
+                    <img src="../asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                </a>
+            </div>
+     </header>
+    
+
+    <!-----------
+    Main Account
+    -------------->
+    <section>
+      <div class="account__container">
+      <!-- Thanh dieu huong ben trai -->
+      <div class="sidebar__container">
+        <p>Xin chào,<br /><spam>Nguyễn Nghĩa</spam></p>
+
+        <ul class="sidebar__menu">
+          <li><a href="../account.html">Thông tin tài khoản</a></li>
+          <li class="active">
+            <a href="course__history.html">Khóa học của tôi</a>
+          </li>
+          <li><a href="voucher.html">Phiếu giảm giá</a></li>
+          <li><a href="payment__history.html">Lịch sử thanh toán</a></li>
+          <li><a href="favorite__food.html">Yêu thích</a></li>
+          <li><a href="../login.html">Đăng xuất</a></li>
+        </ul>
+      </div>
+
+      <!-- Noi dung chinh ben phai -->
+      <div class="course__container">
+        <!--2 cái nút bấm-->
+        <div class="course__buttons">
+          <a href="course__history.html">
+            <button class="active">Lịch sử xem</button>
+          </a>
+          <a href="course__puchase.html">
+            <button>Khóa học đã mua</button>
+          </a>
+        </div>
+        <hr />
+
+        <!--Danh sách xem-->
+        <div class="course__list">
+          <!-- vid 1 -->
+          <a href="../course.html">
+            <!-- CHỖ NÀY ĐIỀN LINK VÀO-->
+            <div class="course__item">
+              <img class="img_course" src="../asset/ga_xao_sa.jpg" />
+              <div class="course__info">
+                <h3>Thịt chó đại chương-Buổi 1</h3>
+                <p>
+                 Giới thiệu qua về thịt chó ..
+
+
+
+                </p>
+                <div class="progress">
+                  <span>36%</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 36%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- vid 2 -->
+          <a href="#">
+            <!-- CHỖ NÀY ĐIỀN LINK VÀO-->
+            <div class="course__item">
+              <img src="../asset/ga_xao_sa.jpg" />
+              <div class="course__info">
+                <h3>Gà Kho Gừng Sả</h3>
+                <p>
+                  Gà kho gừng sả là món ăn đậm đà với thịt gà mềm thấm gia vị,
+                  hòa quyện hương thơm nồng của gừng và mùi sả đặc trưng.
+                </p>
+                <div class="progress">
+                  <span>42%</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 42%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- vid 3 -->
+          <a href="#">
+            <!-- CHỖ NÀY ĐIỀN LINK VÀO-->
+            <div class="course__item">
+              <img src="../asset/ga_xao_sa.jpg" />
+              <div class="course__info">
+                <h3>Gà Kho Gừng Sả</h3>
+                <p>
+                  Gà kho gừng sả là món ăn đậm đà với thịt gà mềm thấm gia vị,
+                  hòa quyện hương thơm nồng của gừng và mùi sả đặc trưng.
+                </p>
+               <div class="progress">
+                  <span>100%</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- vid 4 -->
+          <a href="#">
+            <!-- CHỖ NÀY ĐIỀN LINK VÀO-->
+            <div class="course__item">
+              <img src="../asset/ga_xao_sa.jpg" />
+              <div class="course__info">
+                <h3>Gà Kho Gừng Sả</h3>
+                <p>
+                  Gà kho gừng sả là món ăn đậm đà với thịt gà mềm thấm gia vị,
+                  hòa quyện hương thơm nồng của gừng và mùi sả đặc trưng.
+                </p>
+               <div class="progress">
+                  <span>36%</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 36%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+ 
+     <footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3>Liên hệ</h3>
+                <p>Email: DailyRecipes@gmail.com</p>
+                <p>Sđt: +083 6868 68686</p>
+                <p>Địa chỉ: 13km Nguyễn Trãi, Mộ Lao, Hà Đông</p>
+            </div>
+            <div class="footer__content">
+                <h3>Liên kết nhanh</h3>
+                <ul class="list">
+                    <li><a href="">Công thức</a></li>
+                    <li><a href="">Daily Recipes</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Theo dõi</h3>
+                <ul class="icon">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy: 2025 Daily Recipes . All rights reserves</p>
+        </div>
+     </footer>
+  </body>
+ 
+</html>

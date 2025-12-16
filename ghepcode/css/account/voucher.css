@@ -1,0 +1,114 @@
+.voucher__container {
+  flex: 1;
+  padding: 90px 200px;
+}
+
+.voucher__container-top {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+
+  & h3 {
+    color: var(--p-900);
+    font-size: var(--p-font-size);
+  }
+
+  & .voucher__input {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+    & input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 15px;
+      background: #f7f7f7;
+    }
+
+    & button {
+      background: var(--p-500);
+      color: white;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.voucher__container-bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.voucher-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+
+  & .voucher-top {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .voucher-title {
+      color: #e50000;
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    & .use-btn {
+      border: 1px solid #ff4b4b;
+      background: white;
+      color: #ff4b4b;
+      padding: 6px 14px;
+      border-radius: 7px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+  }
+
+  & .voucher-bottom {
+    display: flex;
+    flex-direction: column;
+
+    & .voucher-desc {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #444;
+    }
+
+    & .voucher-expire {
+      margin-top: 10px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    & .details {
+      display: block;
+      color: #555;
+      font-size: 14px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+/* --- CẤU TRÚC CHUNG --- */
+.page-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- KHÓA HỌC CỦA BẠN (HERO) --- */
+.section-heading {
+    font-size: var(--h6-font-size);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--p-950);
+}
+
+.hero-course {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.hero-thumb {
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--n-400);
+}
+
+.hero-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--p-950);
+}
+
+.hero-meta {
+    font-size: 0.9rem;
+    color: var(--p-800);
+    margin-bottom: 0.5rem;
+}
+
+.hero-desc {
+    font-size: 0.95rem;
+    color: var(--n-500);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Giới hạn 3 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hero-child {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Nút Xem */
+.btn-view {
+    display: inline-block;
+    background-color: var(--p-500);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    align-self: flex-start; /* Không bị kéo giãn chiều ngang */
+    transition: opacity 0.2s;
+}
+.btn-view:hover { opacity: 0.9; }
+
+/* Đường kẻ phân cách */
+.section-divider {
+    height: 1px;
+    background-color: var(--n-300);
+    margin: 0 0 3rem 0;
+}
+
+/* --- GRID KHÓA HỌC (4 CỘT) --- */
+.course-grid-4 {
+    display: grid;
+    /* Chia 4 cột đều nhau */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Card Item Styles */
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-thumb-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.card-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Nhãn rating trên ảnh (3.0 *) */
+.badge-rating {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px var(--n-400);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--p-950);
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* link tiêu đề (bấm vào sẽ mở coursePreview) */
+/* Style cho link tiêu đề */
+.simple-link {
+    text-decoration: none;      
+    color: var(--p-950);        
+    transition: color 0.2s;
+}
+
+/* Khi di chuột vào tiêu đề thì đổi màu */
+.simple-link:hover {
+    color: var(--p-500);        
+    text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+.card-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--n-500);
+}
+
+.price-tag {
+    color: red; /* Màu đỏ cho giá tiền */
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.card-desc {
+    font-size: 0.8rem;
+    color: var(--n-400);
+    line-height: 1.4;
+    height: 3.2em; /* Giới hạn chiều cao text */
+    overflow: hidden;
+    margin-bottom: 8px;
+    -webkit-line-clamp: 2;
+}
+
+/* Card Footer: Tim & Nút Mua */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.btn-heart {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--p-950);
+    transition: color 0.2s;
+}
+.btn-heart:hover { color: var(--p-500); }
+
+/* Nút Mua (Màu xám) */
+.btn-buy-gray {
+    background-color:var(--p-500); /* xám */
+    color: white;
+    text-decoration: none;
+    padding: 6px 24px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.btn-buy-gray:hover {opacity: 0.9; }
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .course-grid-4 { grid-template-columns: repeat(3, 1fr); } /* Tablet: 3 cột */
+    .hero-course { flex-direction: column; }
+    .hero-thumb { width: 100%; height: auto; aspect-ratio: 16/9; }
+}
+
+@media (max-width: 768px) {
+    .course-grid-4 { grid-template-columns: repeat(2, 1fr); } /* Mobile ngang: 2 cột */
+}
+
+@media (max-width: 480px) {
+    .course-grid-4 { grid-template-columns: 1fr; } /* Mobile dọc: 1 cột */
+}

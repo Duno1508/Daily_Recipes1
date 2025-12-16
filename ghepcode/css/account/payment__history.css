@@ -1,0 +1,59 @@
+.payment__container-bo {
+  flex: 1;
+}
+
+.payment__container {
+  flex: 1;
+  margin: 90px 100px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+
+  & h2 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: var(--h5-font-size);
+    color: var(--p-600);
+  }
+
+  & .payment__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .payment {
+      width: 300px;
+    }
+
+    & .payment_1 {
+      width: 120px;
+
+      & .success {
+        color: green;
+        font-weight: bold;
+      }
+
+      & .cancel {
+        color: red;
+        font-weight: bold;
+      }
+
+      & .price {
+        white-space: nowrap;
+      }
+    }
+
+    & .detail {
+      color: #0066ff;
+      text-decoration: none;
+      font-weight: 500;
+      align-self: center;
+    }
+
+    & .payment-title {
+      font-weight: 550;
+      color: var(--p-900);
+    }
+  }
+}

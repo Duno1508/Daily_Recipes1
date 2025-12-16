@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách khóa học</title>
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/MainForm/header.css">
+    <link rel="stylesheet" href="css/courseExplore.css">
+    <link rel="stylesheet" href="./css/MainForm/filter.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="asset/icon-logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/MainForm/section.css">
+ </head>
+
+<body>
+    <!-- header nav trang -->
+     <header>
+        <div class="container header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="MainFormSigned.html" class="logo">
+                    <img src="asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="MainFormSigned.html" >Công thức</a></li>
+                    <li><a href="courseExplore.html" class="active" >Khóa học</a></li>
+                    <li><a href="giangvien.html">Đầu bếp</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <a href="account.html" class="login-link">
+                <button class="login-btn">Đình Nghĩa</button>
+                </a>
+
+                <a href="account.html">
+                    <img src="asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                </a>
+            </div>
+     </header>
+    
+<!---------------------------------------------------->
+    <div class="page-container">
+        
+        <h2 class="section-heading">Khóa học của bạn</h2>
+        
+        <div class="hero-course">
+            <img src="./asset/thit-cho1.jpg" alt="Hero" class="hero-thumb">
+            
+            <div class="hero-info">
+                <h3 class="hero-title">Bí kíp thịt chó đại cương</h3>
+                <div class="hero-meta">3,0 ★ (4k) • 17 Buổi học</div>
+                <div class="hero-child">
+                    <p class="hero-desc">
+                    Khóa học chuyên sâu về nghệ thuật chế biến các món ăn truyền thống. 
+                    Bạn sẽ học được cách chọn nguyên liệu, tẩm ướp gia vị chuẩn chỉ 
+                    và kỹ thuật nấu nướng đỉnh cao từ các đầu bếp hàng đầu...
+                </p>
+                <a href="course.html" class="btn-view">Xem</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2 class="section-heading">Khóa học hiện có</h2>
+
+        <div class="course-grid-4">
+            
+            <article class="grid-card">
+                <div class="card-thumb-wrapper">
+                    <span class="badge-rating">3.0 ★</span>
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" class="card-thumb">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="coursePreview.html" class="simple-link">Bí kíp thịt chó đại cương</a></h4>
+                    <div class="card-meta-row">
+                        <span>3.0 ★ (4k) • 17 Buổi</span>
+                        <span class="price-tag">38.000.000</span>
+                    </div>
+                    <div class="card-desc">Khóa học Thịt chó giới thiệu văn hóa ẩm thực truyền thống, nguồn gốc và cách thưởng thức...</div>
+                    
+                </div>
+                <div class="card-footer">
+                    <div class ="footer-icons">
+                    <button class="btn-heart">
+                        <svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <a href="../ghepcode/html/cart.html" class="btn-heart">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            fill="none" stroke="currentColor" 
+                            stroke-width="0.9"
+                            viewBox="0 2 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                    </a>
+                    </div>
+
+                    <a href="./checkout.html" class="btn-buy-gray">Mua</a>
+                </div>
+            </article>
+
+            <article class="grid-card">
+                <div class="card-thumb-wrapper">
+                    <span class="badge-rating">4.0 ★</span>
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" class="card-thumb">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="coursePreview.html" class="simple-link">Nấu Ăn Cơ Bản Cho Người Mới</a></h4>
+                    <div class="card-meta-row">
+                        <span>4.0 ★ (10k) • 18Buổi</span>
+                        <span class="price-tag">5.000.000</span>
+                    </div>
+                    <div class="card-desc">Dành cho người bắt đầu, giúp bạn nắm vững kỹ năng và công thức nền tảng.</div>
+                </div>
+                <div class="card-footer">
+                    <div class ="footer-icons">
+                    <button class="btn-heart">
+                        <svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <a href="../ghepcode/html/cart.html" class="btn-heart">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            fill="none" stroke="currentColor" 
+                            stroke-width="0.9"
+                            viewBox="0 2 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                    </a>
+                    </div>
+
+                    <a href="./checkout.html" class="btn-buy-gray">Mua</a>
+                </div>
+            </article>
+
+            <article class="grid-card">
+                <div class="card-thumb-wrapper">
+                    <span class="badge-rating">3.6 ★</span>
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" class="card-thumb">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="coursePreview.html" class="simple-link">Ẩm Thực Đường Phố Việt</a></h4>
+                    <div class="card-meta-row">
+                        <span>3.6 ★ (2k) • 5 Buổi</span>
+                        <span class="price-tag">10.000.000</span>
+                    </div>
+                    <div class="card-desc">Khám phá cách chế biến các món ăn đường phố hấp dẫn và đậm đà hương vị.</div>
+                </div>
+                <div class="card-footer">
+                    <div class ="footer-icons">
+                    <button class="btn-heart">
+                        <svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <a href="../ghepcode/html/cart.html" class="btn-heart">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            fill="none" stroke="currentColor" 
+                            stroke-width="0.9"
+                            viewBox="0 2 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                    </a>
+                    </div>
+
+                    <a href="./checkout.html" class="btn-buy-gray">Mua</a>
+                </div>
+            </article>
+
+            <article class="grid-card">
+                <div class="card-thumb-wrapper">
+                    <span class="badge-rating">4.7 ★</span>
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" class="card-thumb">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="coursePreview.html" class="simple-link">Bếp Âu Tại Nhà</a></h4>
+                    <div class="card-meta-row">
+                        <span>4.7 ★ (4k) • 17 Buổi</span>
+                        <span class="price-tag">40.000.000</span>
+                    </div>
+                    <div class="card-desc">Hướng dẫn nấu các món Âu phổ biến với nguyên liệu dễ tìm, chuẩn vị nhà hàng.</div>
+                </div>
+                <div class="card-footer">
+                    <div class ="footer-icons">
+                    <button class="btn-heart">
+                        <svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <a href="../ghepcode/html/cart.html" class="btn-heart">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            fill="none" stroke="currentColor" 
+                            stroke-width="0.9"
+                            viewBox="0 2 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                    </a>
+                    </div>
+
+                    <a href="./checkout.html" class="btn-buy-gray">Mua</a>
+                </div>
+            </article>
+
+            </div>
+    </div>
+<!-- filter trên navbar -->
+    <input type="checkbox" id="toggle-filter" class="filter-toggle" hidden>
+<div class="modal-overlay">
+    <label for="toggle-filter" class="modal-backdrop"></label>
+
+    <div class="filter-box">
+        <div class="filter-header">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <label for="toggle-filter" class="filter-close">&times;</label>
+        </div>
+
+        <div class="filter-body">
+            <div class="filter-row">
+                <label class="filter-label">Tên:</label>
+                <input type="text" class="filter-input-gray" placeholder="Nhập tên...">
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Tag:</label>
+                <div class="filter-tags-group">
+                    <button class="filter-tag">Món Á</button>
+                    <button class="filter-tag">Món Âu</button>
+                    <button class="filter-tag">Tráng miệng</button>
+                    <button class="filter-tag">Nướng bánh</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Đánh giá:</label>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <input type="text" class="filter-input-gray input-small" placeholder="..."> 
+                    <span>★</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Số buổi:</label>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <input type="text" class="filter-input-gray input-small" placeholder="..."> 
+                    <span>Buổi học</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Giá:</label>
+                <div class="price-range-group">
+                    <span>Từ</span>
+                    <input type="text" class="filter-input-gray price-input" placeholder="...">
+                    <span>đến</span>
+                    <input type="text" class="filter-input-gray price-input" placeholder="...">
+                    <span>VNĐ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-footer">
+            <button class="btn-search-submit">
+                Tìm <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+    </div>
+</div>
+<!-------------------------------------->
+<footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3>Liên hệ</h3>
+                <p>Email: DailyRecipes@gmail.com</p>
+                <p>Sđt: +083 6868 68686</p>
+                <p>Địa chỉ: 13km Nguyễn Trãi, Mộ Lao, Hà Đông</p>
+            </div>
+            <div class="footer__content">
+                <h3>Liên kết nhanh</h3>
+                <ul class="list">
+                    <li><a href="">Công thức</a></li>
+                    <li><a href="">Daily Recipes</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Theo dõi</h3>
+                <ul class="icon">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy: 2025 Daily Recipes . All rights reserves</p>
+        </div>
+     </footer>
+    </body>
+
+</html>

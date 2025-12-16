@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Profile.css">
+    <link rel="icon" href="asset/icon-logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/footer.css">
+
+</head>
+<body>
+        <!-- HEADER -->
+     <header>
+        <div class="container header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="MainFormSigned.html" class="logo">
+                    <img src="asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="MainFormSigned.html" >Công thức</a></li>
+                    <li><a href="courseExplore.html">Khóa học</a></li>
+                    <li><a href="giangvien.html">Đầu bếp</a></li>
+                    <li><a href="Blog.html" class="active">Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <button class="login-btn"> Đình Nghĩa </button>
+                <img src="asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                <a href="#"></a>
+              </div>
+     </header>
+
+     <!-- MAIN -->
+      <main class="profile__main">
+
+        <section class="owner__section">
+            <div class="profile__avatar">
+                <img src="asset/avatar.ico" alt="avatar">
+            </div>
+
+            <div class="profile__name">
+                <h2>Nguyễn Đình Nghĩa</h2>
+                <div class="role-fl">
+                    <h6>Học viên</h6>
+                    <p><span>10.020</span> người theo dõi</p>
+                    <p><span>15.8tr</span> lượt thích</p>
+                </div>
+                <p class="profile__desc">Đầu bếp tại gia 5 sao. Kinh nghiệm 10 năm rửa bát, 20 năm ăn cơm</p>
+                <button class="fl__button">Theo dõi</button>
+            </div>
+        </section>
+
+        <section class="information__section">
+            <!-- Khóa học -->
+            <div class="course__aside">
+                <h2>KHÓA HỌC</h2>
+
+                <a href="" class="course__content--container">
+                    <img src="asset/chinhphucmechong.jpg" alt="Chinh phục mẹ chồng">
+                    <p>Chinh phục mẹ chồng >></p>
+                </a>
+
+                <a href="" class="course__content--container">
+                    <img src="asset/up-mi-tom.jpg" alt="Úp mì tôm">
+                    <p>Úp mì tôm >></p>
+                </a>
+            </div>
+
+            <!-- Bài Đăng -->
+            <div class="post__container">
+                <!-- Bài đăng 1 -->
+                <div class="post-content__container">
+                    
+                    <div class="owner__container">
+                        <a href="Profile.html">
+                            <img class="avatar-post" src="asset/avatar.ico" alt="Nguyễn Nghĩa Đình">
+                        </a>
+                        <div class="name-time">
+                            <h6>Nguyễn Nghĩa Đình</h6>
+                            <p>3 giờ</p>
+                        </div>
+                    </div>
+
+                    <div class="caption">Úp mì tôm chưa bao giờ dễ đến thế</div>
+                    <img class="post-img" src="asset/up-mi.webp" alt="úp mì">
+                    <div class="reaction">
+                        <div class="reacts"> 10K</div>
+                        <div class="love">
+                            <input type="checkbox" id="fav" class="favorite-input" />
+                            <label for="fav" class="card__favorite"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài đăng 2 -->
+                <div class="post-content__container">
+                    
+                    <div class="owner__container">
+                        <a href="#">
+                            <img class="avatar-post" src="asset/avatar.ico" alt="Nguyễn Nghĩa Đình">
+                        </a>
+                        <div class="name-time">
+                            <h6>Nguyễn Nghĩa Đình</h6>
+                            <p>3 giờ</p>
+                        </div>
+                    </div>
+
+                    <div class="caption">Úp mì tôm chưa bao giờ dễ đến thế</div>
+                    <img class="post-img" src="asset/up-mi.webp" alt="úp mì">
+                    <div class="reaction">
+                        <div class="reacts"> 10K</div>
+                        <div class="love">
+                            <input type="checkbox" id="fav" class="favorite-input" />
+                            <label for="fav" class="card__favorite"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3>Liên hệ</h3>
+                <p>Email: DailyRecipes@gmail.com</p>
+                <p>Sđt: +083 6868 68686</p>
+                <p>Địa chỉ: 13km Nguyễn Trãi, Mộ Lao, Hà Đông</p>
+            </div>
+            <div class="footer__content">
+                <h3>Liên kết nhanh</h3>
+                <ul class="list">
+                    <li><a href="">Công thức</a></li>
+                    <li><a href="">Daily Recipes</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Theo dõi</h3>
+                <ul class="icon">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy: 2025 Daily Recipes . All rights reserves</p>
+        </div>
+     </footer>

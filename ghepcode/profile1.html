@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ Giảng viên - Nguyễn Đình Nghĩa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../ghepcode/css/theme.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/modal.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/header.css">
+    <link rel="stylesheet" href="../ghepcode/giangvien.html">
+    <link rel="stylesheet" href="../ghepcode/css/profile1.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/filter.css">
+    <link rel="stylesheet" href="../ghepcode/css/MainForm/footer.css">
+    <link rel="icon" href="asset/icon-logo.ico">
+</head>
+<body>
+    <input type="checkbox" id="toggle-intro-modal" hidden>
+    <!--thẻ cửa sổ edit giới thiệu-->
+    <div class="modal-overlay modal-overlay-intro">
+        <label for="toggle-intro-modal" class="modal-backdrop"></label>
+
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Chỉnh sửa giới thiệu của bạn</h3>
+                <label for="toggle-intro-modal" class="modal-close">&times;</label>
+            </div>
+
+            <div class="modal-body">
+                
+                <div class="edit-row">
+                    <div class="edit-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Sống tại</span>
+                    </div>
+                    <div class="edit-input-wrap">
+                        <input type="text" value="Nhà Yến" class="edit-input">
+                        <button class="btn-remove-row">&times;</button>
+                    </div>
+                </div>
+
+                <div class="edit-row">
+                    <div class="edit-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <span>Công việc...</span>
+                    </div>
+                    <div class="edit-input-wrap">
+                        <input type="text" value="Bếp trưởng tại ABC" class="edit-input">
+                        <button class="btn-remove-row">&times;</button>
+                    </div>
+                </div>
+
+                <button class="btn-add-new">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Thêm
+                </button>
+
+            </div>
+
+            <div class="modal-footer">
+                <label for="toggle-intro-modal" class="btn-save-gray">
+                    Lưu 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </label>
+            </div>
+        </div>
+    </div>
+<!-- cửa sổ about me-->    
+    <input type="checkbox" id="toggle-about-modal" hidden>
+
+<div class="modal-overlay modal-overlay-about">
+    <label for="toggle-about-modal" class="modal-backdrop"></label>
+
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3>About me</h3>
+            <label for="toggle-about-modal" class="modal-close">&times;</label>
+        </div>
+
+        <div class="modal-body">
+            <textarea class="edit-textarea">Biết nấu cơm, nắng mưa biết chạy vô nhà</textarea>
+        </div>
+
+        <div class="modal-footer">
+            <label for="toggle-about-modal" class="btn-save-gray">
+                Lưu 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- cửa sổ kinh nghiệm -->
+<input type="checkbox" id="toggle-exp-modal" hidden>
+
+<div class="modal-overlay modal-overlay-exp">
+    <label for="toggle-exp-modal" class="modal-backdrop"></label>
+
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3>Chỉnh sửa kinh nghiệm của bạn</h3>
+            <label for="toggle-exp-modal" class="modal-close">&times;</label>
+        </div>
+
+        <div class="modal-body">
+            <div class="edit-item-full">
+                <span>Ẩm thực Âu</span>
+                <button class="btn-remove-row">&times;</button>
+            </div>
+
+            <div class="edit-item-full">
+                <span>Các món tráng miệng</span>
+                <button class="btn-remove-row">&times;</button>
+            </div>
+
+            <div class="edit-item-full">
+                <span>Món Việt</span>
+                <button class="btn-remove-row">&times;</button>
+            </div>
+
+            <button class="btn-add-new">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Thêm
+            </button>
+        </div>
+
+        <div class="modal-footer">
+            <label for="toggle-exp-modal" class="btn-save-gray">
+                Lưu 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </label>
+        </div>
+    </div>
+</div>
+
+    <!-- header nav trang -->
+     <header>
+        <div class=" header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="MainFormSigned.html" class="logo">
+                    <img src="asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="MainFormSigned.html" >Công thức</a></li>
+                    <li><a href="courseExplore.html">Khóa học</a></li>
+                    <li><a href="giangvien.html" class="active">Đầu bếp</a></li>
+                    <li><a href="Blog.html"  >Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <a href="account.html" class="login-link">
+                <button class="login-btn">Đình Nghĩa</button>
+                </a>
+
+                <a href="account.html">
+                    <img src="asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                </a>
+            </div>
+     </header>
+<!---------------------------------------------------->
+
+    <!-- phần trang cá nhân chính -->
+    <div class="profile-container">
+        <div class="profile-cover">
+            <img src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D?q=80&w=2070&auto=format&fit=crop" alt="Cover Image">
+        </div>
+
+        <div class="profile-header-wrapper">
+            <div class="profile-avatar-large">
+                <img src="https://ui-avatars.com/api/?name=Nguyen+Dinh+Nghia&background=62a141&color=fff&size=256" alt="Nghĩa">
+            </div>
+            <div class="profile-identity">
+                <h1 class="profile-name">Nguyễn Đình Nghĩa</h1>
+                <span class="profile-handle">@nghiachef</span>
+            </div>
+        </div>
+
+        <div class="profile-info-grid">
+            
+            <div class="info-col-left">
+                <div class="section-title">
+                    <h3>Giới thiệu</h3>
+                    <label for="toggle-intro-modal" class="edit-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></label>
+                </div>
+                
+                <ul class="info-list">
+                    <li>
+                        <span class="icon">🏠</span> 
+                        <span>Sống tại <strong>Nhà Yến</strong></span>
+                    </li>
+                    <li>
+                        <span class="icon">🍳</span> 
+                        <span>Bếp trưởng tại <strong>ABC</strong></span>
+                    </li>
+                </ul>
+
+                <div class="section-title mt-4">
+                    <h3>About me</h3>
+                    <label for="toggle-about-modal" class="edit-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></label>
+                </div>
+                <p class="about-text">Biết nấu cơm, mưa nắng biết chạy vô nhà</p>
+            </div>
+
+            <div class="info-col-right">
+                <div class="section-title">
+                    <h3>Kinh nghiệm</h3>
+                    <label for="toggle-exp-modal" class="edit-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></label>
+                </div>
+                <ul class="exp-list">
+                    <li>
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Ẩm thực Âu
+                    </li>
+                    <li>
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Các món tráng miệng
+                    </li>
+                    <li>
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Món Việt
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="courses-section">
+            <h2 class="courses-heading">Khóa học ( 4 )</h2>
+            
+            <div class="course-grid">
+                <article class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop" alt="Món ăn">
+                    </div>
+                    <div class="course-body">
+                        <div class="course-rating">
+                            <strong>3,0</strong> ★ <span class="text-muted">(4k ratings)</span>
+                        </div>
+                        <h3 class="course-title"><a href="coursePreview.html" class="simple-link">Bí kíp thịt chó đại cương</a></h3>
+                        <div class="course-tags">
+                            <span>Món Việt</span> • <span>Dân dã</span>
+                        </div>
+                        <div class="course-footer">
+                            <button class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16"><path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/></svg></button>
+                            <a href="../ghepcode/html/cart.html" class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16"><path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" alt="Món ăn">
+                    </div>
+                    <div class="course-body">
+                        <div class="course-rating">
+                            <strong>3,0</strong> ★ <span class="text-muted">(4k ratings)</span>
+                        </div>
+                        <h3 class="course-title"><a href="coursePreview.html" class="simple-link">Bí kíp thịt chó đại cương</a></h3>
+                        <div class="course-tags">
+                            <span>Món Việt</span> • <span>Dân dã</span>
+                        </div>
+                        <div class="course-footer">
+                            <button class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16"><path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/></svg></button>
+                            <a href="../ghepcode/html/cart.html" class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16"><path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop" alt="Món ăn">
+                    </div>
+                    <div class="course-body">
+                        <div class="course-rating">
+                            <strong>3,0</strong> ★ <span class="text-muted">(4k ratings)</span>
+                        </div>
+                        <h3 class="course-title"><a href="coursePreview.html" class="simple-link">Bí kíp thịt chó đại cương</a></h3>
+                        <div class="course-tags">
+                            <span>Món Việt</span> • <span>Dân dã</span>
+                        </div>
+                        <div class="course-footer">
+                            <button class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16"><path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/></svg></button>
+                            <a href="../ghepcode/html/cart.html" class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16"><path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop" alt="Món ăn">
+                    </div>
+                    <div class="course-body">
+                        <div class="course-rating">
+                            <strong>3,0</strong> ★ <span class="text-muted">(4k ratings)</span>
+                        </div>
+                        <h3 class="course-title"><a href="coursePreview.html" class="simple-link">Bí kíp thịt chó đại cương</a></h3>
+                        <div class="course-tags">
+                            <span>Món Việt</span> • <span>Dân dã</span>
+                        </div>
+                        <div class="course-footer">
+                            <button class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16"><path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/></svg></button>
+                            <a href="../ghepcode/html/cart.html" class="icon-btn-small"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16"><path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/></svg></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+      
+
+    </div>
+
+<!-- filter giảng viên-->
+<input type="checkbox" id="toggle-filter" class="filter-toggle" hidden>
+<div class="modal-overlay">
+    <label for="toggle-filter" class="modal-backdrop"></label>
+
+    <div class="filter-box">
+        <div class="filter-header">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <label for="toggle-filter" class="filter-close">&times;</label>
+        </div>
+
+        <div class="filter-body">
+            <div class="filter-row">
+                <label class="filter-label">Tên:</label>
+                <input type="text" class="filter-input-gray" placeholder="Nhập tên...">
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Username:</label>
+                <input type="text" class="filter-input-gray" placeholder="Nhập username...">
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Đánh giá:</label>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <input type="text" class="filter-input-gray input-small" placeholder="..."> 
+                    <span>★</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Tag:</label>
+                <div class="filter-tags-group">
+                    <button class="filter-tag">Món Á</button>
+                    <button class="filter-tag">Món Âu</button>
+                    <button class="filter-tag">Tráng miệng</button>
+                    <button class="filter-tag">Nướng bánh</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <label class="filter-label">Khu vực:</label>
+                <div class="filter-tags-group">
+                    <button class="filter-tag">Hà Nội</button>
+                    <button class="filter-tag">Hải Phòng</button>
+                    <button class="filter-tag">Tp. HCM</button>
+                    <button class="filter-tag">Đồng Nai</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-footer">
+            <button class="btn-search-submit">
+                Tìm <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------->
+<footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3>Liên hệ</h3>
+                <p>Email: DailyRecipes@gmail.com</p>
+                <p>Sđt: +083 6868 68686</p>
+                <p>Địa chỉ: 13km Nguyễn Trãi, Mộ Lao, Hà Đông</p>
+            </div>
+            <div class="footer__content">
+                <h3>Liên kết nhanh</h3>
+                <ul class="list">
+                    <li><a href="">Công thức</a></li>
+                    <li><a href="">Daily Recipes</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Theo dõi</h3>
+                <ul class="icon">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy: 2025 Daily Recipes . All rights reserves</p>
+        </div>
+     </footer>
+</body>
+</html>

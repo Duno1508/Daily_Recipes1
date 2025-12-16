@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ---xóa hết các kiểu mặc định của trình duyệt */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======== THEME ======= */
+
+:root {
+    /* ------ COLOR ------ */
+    /* Primary color */
+--p-50: #f2f9ec;
+--p-100: #d8ecca;
+--p-200: #c5e3b3;
+--p-300: #a1d185;
+--p-400: #81bc5f;
+--p-500: #62a141;
+--p-600: #4a8030;
+--p-700: #3a6229;
+--p-800: #324f25;
+--p-900: #2c4423;
+--p-950: #15240f;
+
+/* Secondary color */
+--s-50: #f6f3e2;
+--s-300: #f3d656;
+--s-400: #f0c32f;
+--s-500: #e9a517;
+
+/* Neutral color */
+--n-50: #fafaf9;
+--n-200: #e7e5e4;
+--n-300: #d6d3d1;
+--n-400: #a6a09b;
+--n-500: #79716b;
+--n-600: #57534d;
+
+    /* ------FONT------ */
+--h1-font-size: 2.986rem;
+--h1-line-height: 1;  /* line height = font size */
+
+--h2-font-size: 2.488rem;
+--h2-line-height: 2.5rem;
+
+--h3-font-size: 2.074rem;
+--h3-line-height: 2.25rem;
+
+--h4-font-size: 1.728rem;
+--h4-line-height: 2rem;
+
+--h5-font-size: 1.44rem;
+--h5-line-height: 2rem;
+
+--h6-font-size: 1.2rem;
+--h6-line-height: 1.75rem;
+
+--p-font-size: 1rem;
+--p-line-height: 1.25rem;
+--p-letter-spacing: 0.025rem;
+
+--caption-font-size: 0.833rem;
+--caption-line-height: 1.25rem;
+
+}

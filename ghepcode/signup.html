@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-----------
+    Header
+    -------------->
+    <header>
+      <div class="header__container">
+        <div class="header__top"></div>
+        <div class="header__bottom--menu">
+          <a href="login.html">Tài khoản</a>
+        </div>
+      </div>
+    </header>
+
+    <!-----------
+    Main Account
+    -------------->
+
+    <div class="login__container">
+      <div class="login__container-content">
+        <!-- LEFT SIDE IMAGE -->
+        <div class="login__container-left">
+          <img src="./asset/anh_signup.jpg" alt="Background" />
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="signup__container-right">
+          <div class="signup__form">
+            <h1>Đăng kí</h1>
+
+            <div class="signup_row">
+              <p>Thông tin cá nhân</p>
+              <input type="text" placeholder="Họ và tên" required />
+              <input type="tel" placeholder="Số điện thoại" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Mật khẩu" required />
+            </div>
+
+            <div class="signup_row">
+              <p>Quốc gia</p>
+              <select>
+                <option>Việt Nam</option>
+                <option>Khác</option>
+              </select>
+            </div>
+
+            <div class="signup_row">
+              <p>Sinh nhật</p>
+              <input class="date" type="date" />
+            </div>
+
+            <a href="account.html">
+              <button class="signup__btn">Đăng kí</button>
+            </a>
+
+            <p class="dieukhoan">
+              Bằng cách tạo tài khoản, bạn đồng ý với Điều khoản sử dụng và
+              Chính sách bảo mật của Recipes.
+            </p>
+
+            <p class="login__signup">
+              Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.course__item {
+  & img {
+    width: 33vh;
+    height: 18vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  & .course__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & .course__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      & .teacher {
+        font-size: var(--p-font-size);
+        font-weight: bold;
+        color: var(--p-500);
+      }
+    }
+
+    & .progress {
+      grid-column: 2 / span 2;
+
+      & span {
+        font-size: var(--caption-font-size);
+        color: var(--p-900);
+      }
+    }
+
+    & .progress-bar {
+      width: 40%;
+      height: 6px;
+      background: var(--n-200);
+      border-radius: 10px;
+    }
+
+    & .progress-fill {
+      height: 100%;
+      background: #56bb0e;
+      border-radius: 10px;
+    }
+  }
+}

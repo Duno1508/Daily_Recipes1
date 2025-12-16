@@ -1,0 +1,215 @@
+/* --- CẤU HÌNH CHUNG --- */
+.page-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Breadcrumb (Tiêu đề trang) */
+.course-breadcrumb-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.container{
+    width: 100% !important;
+}
+.breadcrumb-links {
+    font-size: var(--p-font-size);
+    color: var(--p-950);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb-links a {
+    text-decoration: none;
+    color: var(--p-950);
+    font-weight: 500;
+}
+
+.breadcrumb-links a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-links .current {
+    font-weight: 700; /* Đậm cho trang hiện tại */
+}
+
+.breadcrumb-links .separator {
+    color: var(--n-400);
+}
+
+.page-title {
+    font-size: var(--h6-font-size);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--n-300);
+    padding-bottom: 1rem;
+}
+
+/* --- BẢNG GIỎ HÀNG --- */
+.cart-table-header {
+    display: flex;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--p-950);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.cart-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--n-200);
+}
+
+/* Định nghĩa độ rộng các cột */
+.col-product { flex: 3; text-align: left; }
+.col-price { flex: 5; text-align: right; }
+.col-qty { flex: 5; text-align: center; }
+.col-subtotal { flex: 5; text-align: left; }
+.col-action { flex: 2; display: flex; justify-content: flex-end; align-items: center; gap: 30px; }
+
+/* Product Info trong bảng */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-thumb {
+    width: 80px;
+    height: 50px;
+    background-color: var(--n-300); /* Màu xám placeholder như ảnh */
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.price-text {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Nút Xóa (X) */
+.btn-remove {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--n-500);
+    transition: color 0.2s;
+}
+.btn-remove:hover { color: red; }
+
+/* --- CÁC LOẠI NÚT BẤM --- */
+.btn-olive {
+    background-color: var(--p-500); 
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+.btn-olive:hover { opacity: 0.9; }
+
+.btn-large {
+    padding: 12px 30px;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+/* --- COUPON SECTION --- */
+.coupon-section {
+    margin-top: 2rem;
+}
+
+.coupon-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.coupon-input-group {
+    display: flex;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.coupon-input {
+    flex-grow: 1;
+    background-color: var(--n-200);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* --- FOOTER ACTION (Căn giữa) --- */
+.cart-footer-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* =========================================
+   STYLE RIÊNG CHO TRANG THANH TOÁN (CHECKOUT)
+   ========================================= */
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+/* Label đóng vai trò là container cho ô chọn */
+.payment-option {
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Box hiển thị */
+.payment-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--n-100); /* Màu xám nhạt mặc định */
+    border: 2px solid var(--n-300); /* Viền xám mặc định */
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.radio-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--n-400); /* Màu tròn xám mặc định */
+    flex-shrink: 0;
+}
+
+/* LOGIC ĐỔI MÀU KHI CHỌN (CHECKED) */
+/* Khi input radio được check, đổi style của .payment-box nằm ngay sau nó */
+.payment-option input:checked + .payment-box {
+    border-color: var(--p-500); 
+    background-color: white; 
+}
+
+/* Đổi màu hình tròn bên trong */
+.payment-option input:checked + .payment-box .radio-circle {
+    background-color: var(--p-500); 
+}

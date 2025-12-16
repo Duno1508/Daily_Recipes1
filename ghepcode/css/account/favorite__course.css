@@ -1,0 +1,7 @@
+.favorite__list {
+  & .notification {
+    flex: 1;
+    text-align: center;
+    color: var(--p-900);
+  }
+}

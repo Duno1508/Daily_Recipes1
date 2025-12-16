@@ -1,0 +1,184 @@
+.header__container{
+    top:0;
+    display:flex;
+    width: 100vw !important;
+    margin: 0;
+    background-color: var(--p-500);
+    align-items: center;
+    white-space: nowrap;
+    justify-content:space-between;
+    position: static;
+    z-index: 100;
+    box-shadow: 0px 4px 6px -1px rgb(0,0,0,0.1),
+    0 2px 4px -2px rgb(0,0,0,0.1);
+
+}
+.search__container{
+    display: flex;
+    /* flex: 1; */
+    gap: 6px;
+    align-items: center;
+
+    & .search__box {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        border-radius: 15px;
+        height: 27px;
+        /* width: 400px; */
+        background-color: var(--s-50);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.1s ease-in-out;
+
+         & .search{
+        background-color: var(--s-50);
+        border: none;
+        outline: none;
+        margin-right: 10px;
+        }
+
+        & .search__icon{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: var(--p-600);
+        }
+
+
+    }
+
+    & .filter__btn {
+        background-color: var(--p-500);
+        margin: 10px;
+        border: none;
+        font-size: var(--h6-font-size);
+        color: var(--s-50);
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+}
+
+    & .filter__btn:hover {
+        color: white;
+        transform: scale(1.2);
+    }
+
+    & .search__box:hover{
+        box-shadow: 0 4px 6px -1px rgb(0,0,0,0.1),
+         0 2px 4px -2px rgb(0,0,0,0.1);
+         transform: scale(1.03);   
+    }
+
+}
+
+ .filter__panel {
+    background-color: var(--s-50);
+    position: absolute;
+    top: 55px; /* điều chỉnh theo chiều cao header */
+    left: 0;
+    width: 100%;
+    display: none; /* Ẩn mặc định */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    border-radius: 0 0 10px 10px;
+    z-index: 99;
+    animation: slideDown 0.25s ease;
+
+    & h3{
+        font-size: var(--h4-font-size);
+        margin: 0.5rem 1rem ;
+        font-weight: 500;
+        color: var(--p-600);
+    }
+
+
+    & dl{
+        /* display: inline-block; */
+        display: flex;
+        flex-direction: column;
+        color: #444;
+    }
+
+    & dt{
+        display: inline-block;
+        font-size: var(--h6-font-size);
+        margin: 15px;
+        color: #444;
+    }
+
+    & dd{
+        display: inline-block;
+        font-size: var(--p-font-size);
+        margin: auto 5px;
+    }
+}
+
+
+/* Khi checkbox được check -> hiện panel */
+#filter:checked + .filter__btn + .filter__panel {
+    display: block;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+
+    & a {
+        text-decoration: none;
+        padding: 15px;
+        color: var(--s-50);
+        font-size: var(--p-font-size);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        font-weight: 500;
+        transition: font-size 0.25s ease;
+    }
+
+    & a:hover {
+    font-size: var(--h6-font-size);
+    color: white;
+    }
+
+    & a.active {
+    font-weight: 700;
+    font-size: var(--h6-font-size); 
+    padding-bottom: 2px;
+    }
+}
+
+.header__login{
+    border: 1.5px solid var(--s-50);
+    background-color: transparent;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    /* height: 35px; */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+    & button{
+        border: none;
+        background-color: transparent;
+        margin-left: 5px;
+        border-radius: 5px;
+        color: var(--n-50);
+        font-size: var(--p-font-size);
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    & img{
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: transparent;
+    }
+}
+
+.header__login:hover{
+    transform: scale(1.1);
+}
+

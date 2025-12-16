@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh chưng</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/Recipe.css">
+   <link rel="icon" href="asset/icon-logo.ico">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="icon" href="../asset/icon-logo.ico">
+  </head>
+
+</head>
+<body>
+        <!-- HEADER -->
+     <header>
+        <div class="container header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <a href="MainFormSigned.html" class="logo">
+                    <img src="../asset/logo web.webp" alt="Daily Recipes" width="100px">
+                </a>
+            </div>
+            
+            <!-- search -->
+            <div class="header search__container">
+                <!-- search -->
+                <div class="search__box">
+                     <i class="fas fa-search search__icon"></i>
+                     <input class="search" type="text" placeholder="Tìm công thức, khóa học,..." size="45">
+                </div>
+                 <!-- filter -->
+                  <input type="checkbox" id="filter" hidden>
+                 <label class="filter__btn" for="filter">
+                      <i class="fas fa-filter"></i>
+                 </label>
+
+                    <!-- Filter Panel -->
+                <div class="filter__panel">
+                    <h3>Bộ lọc</h3>
+                    <dl>
+                        <div class="type">
+                            <dt>Kiểu món</dt>
+                            <dd><input type="checkbox">Món chính</dd>
+                            <dd><input type="checkbox">Món chay</dd>
+                            <dd><input type="checkbox">Món mặn</dd>
+                            <dd><input type="checkbox">Tráng miệng</dd>
+                            <dd><input type="checkbox">Ăn vặt</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Quốc gia</dt>
+                            <dd><input type="checkbox">Việt Nam</dd>
+                            <dd><input type="checkbox">Trung Quốc</dd>
+                            <dd><input type="checkbox">Hàn Quốc</dd>
+                            <dd><input type="checkbox">Ý</dd>
+                            <dd><input type="checkbox">Mỹ</dd>
+                        </div>
+                        <div class="type">
+                        <dt>Nguyên liệu</dt>
+                            <dd><input type="checkbox">Bò</dd>
+                            <dd><input type="checkbox">Gà</dd>
+                            <dd><input type="checkbox">Trứng</dd>
+                            <dd><input type="checkbox">Sữa</dd>
+                            <dd><input type="checkbox">Gạo</dd>
+                        </div>
+                        <div class="type">
+                            <dt>Độ khó</dt>
+                            <dd><input type="checkbox">Khó</dd>
+                            <dd><input type="checkbox">Trung bình</dd>
+                            <dd><input type="checkbox">Dễ</dd>
+                        </div>
+                    </dl>
+            </div>
+        </div>
+                    <!-- navigation menu -->
+                <ul class="nav__container">
+                    <li><a href="../MainFormSigned.html" class="active">Công thức</a></li>
+                    <li><a href="../courseExplore.html">Khóa học</a></li>
+                    <li><a href="../giangvien.html">Đầu bếp</a></li>
+                    <li><a href="../Blog.html">Blog</a></li>
+                </ul>
+
+
+             <!-- login button -->
+              <div class="header__login">
+                <button class="login-btn"> Hải Yến </button>
+                <img src="../asset/avatar.ico" class="avatar" alt="avatar" height="40">
+                <a href="../account.html"></a>
+              </div>
+     </header>
+    
+     <!-- SECTION -->
+
+     <section class="recipe__section">
+
+        <h1 class="recipe__title">BÁNH CHƯNG</h1>
+
+        <div class="recipe__img"><img src="../asset/banhchung.webp" alt="Bánh chưng"></div>
+
+        <div class="recipe__content">
+            <!-- NGUYÊN LIỆU -->
+            <div class="ingredient__content">
+                <h2 class="ingredient__title">NGUYÊN LIỆU</h2>
+                <ul class="ingredient">
+                    <li>6-8 lá dong</li>
+                    <li>500-600g gạo nếp</li>
+                    <li>150-200g đậu xanh cả vỏ</li>
+                    <li>150-200g thịt ba chỉ</li>
+                    <li>1-2 thìa cà phê muối</li>
+                    <li>1-2 thìa cà phê tiêu xay (tùy vị) </li>
+                    <li>4-6 sợi dây lạt buộc</li>
+                </ul>
+            </div>
+
+            <!-- CÔNG THỨC -->
+            <div class="instruction__content">
+                <h2 class="instruction__title">HƯỚNG DẪN</h2>
+                <p class="serve">Khẩu phần: 2-3 người</p>
+                <ol type="1" class="instruction">
+                    <li> 
+                        <span class="step">Chuẩn bị nguyên liệu</span> 
+                        <ul> 
+                            <li>Rửa lá dong, lau sạch và hơ sơ cho lá mềm dễ gói</li>
+                            <li>Ngâm gạo nếp 6–8 giờ, trộn chút muối</li>
+                            <li>Ngâm đậu xanh 4–6 giờ, hấp chín rồi giã nhuyễn, trộn muối tiêu</li>
+                            <li>Thịt ba chỉ cắt dải dày 2–3 cm, ướp muối + tiêu</li>
+                        </ul>
+                    </li>
+                    <li > 
+                        <span class="step">Gói bánh</span> 
+                        <ul >
+                        <li>Xếp lá dong thành khuôn vuông</li>
+                        <li>Cho 1 lớp gạo nếp phía dưới</li>
+                        <li>Thêm đậu xanh dàn đều</li>
+                        <li>Đặt thịt ở giữa</li>
+                        <li>Phủ tiếp đậu và gạo nếp lên trên</li>
+                        <li>Gấp lá thật chặt và buộc dây vuông vắn</li>
+                        </ul>
+                    </li>
+                    
+                    <li > 
+                        <span class="step">Luộc bánh</span> 
+                        <ul>
+                        <li>Xếp bánh gọn trong nồi lớn, đổ nước ngập mặt bánh</li>
+                        <li>Luộc 10–12 giờ với lửa vừa</li>
+                        <li>Trong quá trình luộc cần châm thêm nước sôi nếu cạn</li>
+                        </ul>
+                    </li>
+
+                    <li> 
+                        <span  class="step">Ép bánh và để nguội</span> 
+                        <ul>
+                            <li>Sau khi vớt bánh, dùng vật nặng ép 1–2 giờ giúp bánh chắc và vuông đẹp</li>
+                            <li>Để ráo và nguội hẳn trước khi cắt</li>
+                        </ul>                       
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- MẸO -->
+        <div class="recipe__tip">
+            <h2>MẸO NHỎ</h2>
+            <p>Gạo và đậu nên rửa sạch và ngâm trước 4–8 giờ để khi luộc nhanh chín và bánh dẻo hơn.</p>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="recipe__video">
+            <h2>VIDEO</h2> 
+            <video src="../asset/banhchungtutorial.webm" type="video/webm" controls ></video>
+        </div>
+
+        <div class="fav-checkbox">
+            <input type="checkbox" id="fav" class="favorite-input" />
+            <label for="fav" class="card__favorite"></label>
+        </div>
+
+     </section>
+
+         <!-- FOOTER -->
+     <footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3>Liên hệ</h3>
+                <p>Email: DailyRecipes@gmail.com</p>
+                <p>Sđt: +083 6868 68686</p>
+                <p>Địa chỉ: 13km Nguyễn Trãi, Mộ Lao, Hà Đông</p>
+            </div>
+            <div class="footer__content">
+                <h3>Liên kết nhanh</h3>
+                <ul class="list">
+                    <li><a href="">Công thức</a></li>
+                    <li><a href="">Daily Recipes</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Theo dõi</h3>
+                <ul class="icon">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <p>&copy: 2025 Daily Recipes . All rights reserves</p>
+        </div>
+     </footer>
+</body>
+</html>
